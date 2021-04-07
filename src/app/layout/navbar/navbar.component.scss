@@ -1,0 +1,20 @@
+@import "../../../styles/helpers/variables";
+
+.navbar {
+  background-color: $color-black;
+  font-size: 1.6rem;
+
+  & li a {
+    color: $color-white;
+    margin: 0 1.4rem;
+  }
+
+  & li a:hover {
+    color: $color-gold;
+  }
+
+  & li a.active {
+    color: $color-gold;
+    text-decoration: underline;
+  }
+}
