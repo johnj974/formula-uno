@@ -34,3 +34,9 @@
     margin: 0 auto;
   }
 }
+
+.btn-outline-secondary:hover {
+  background-color: $color-gold;
+  border-color: $color-gold;
+  color: $color-black;
+}
