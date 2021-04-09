@@ -3,11 +3,13 @@ import { CommonModule } from '@angular/common';
 
 import { TrackRoutingModule } from './track-routing.module';
 import { MainTrackComponent } from './main-track/main-track.component';
+import { TrackInfoComponent } from './track-info/track-info.component';
 
 
 @NgModule({
   declarations: [
-    MainTrackComponent
+    MainTrackComponent,
+    TrackInfoComponent
   ],
   imports: [
     CommonModule,
