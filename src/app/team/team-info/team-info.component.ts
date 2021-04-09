@@ -3,11 +3,11 @@ import { TeamModel } from 'src/app/shared/models/team.model';
 import { TeamService } from 'src/app/shared/services/team.service';
 
 @Component({
-  selector: 'app-info',
-  templateUrl: './info.component.html',
-  styleUrls: ['./info.component.scss'],
+  selector: 'app-team-info',
+  templateUrl: './team-info.component.html',
+  styleUrls: ['./team-info.component.scss'],
 })
-export class InfoComponent implements OnInit {
+export class TeamInfoComponent implements OnInit {
   //.
 
   teamInfoArray: TeamModel[];
