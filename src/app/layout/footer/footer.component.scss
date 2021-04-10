@@ -14,12 +14,13 @@
   }
 
   & li a {
-    color: $color-white;
+    color: $color-gold;
     margin: 0 1.4rem;
   }
 
   & li a:hover {
     color: $color-gold;
+    text-decoration: underline;
   }
 }
 
@@ -34,9 +35,14 @@
     margin: 0 auto;
   }
 }
-
-.btn-outline-secondary:hover {
+.btn-outline-secondary {
   background-color: $color-gold;
   border-color: $color-gold;
   color: $color-black;
+}
+
+.btn-outline-secondary:hover {
+  background-color: transparent;
+  border-color: $color-gold;
+  color: $color-white;
 }

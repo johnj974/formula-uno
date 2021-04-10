@@ -5,23 +5,34 @@
         <div class="connection p-5">
           <h4 class="pb-5">Stay Connected</h4>
           <p>Join A Newsletter</p>
-          <form class="mb-5">
+          <form class="mb-5" (ngSubmit)="onSignUp(signUp)" #signUp="ngForm">
             <div class="input-group mb-3">
               <input
+                name="email"
                 type="email"
                 class="form-control"
                 placeholder="Email_Address"
-                aria-describedby="button-addon2"
+                ngModel
+                required
+                email
+                #email="ngModel"
               />
               <button
                 class="btn btn-outline-secondary"
-                type="button"
-                id="button-addon2"
+                type="submit"
+                [disabled]="!signUp.valid"
               >
                 Sign Up
               </button>
             </div>
+            <p *ngIf="!email.value && email.touched">
+              Please enter a valid email
+            </p>
+            <p *ngIf="registeredEmail">
+              Welcome to the Team {{ registeredEmail }}
+            </p>
           </form>
+
           <p class="mb-5">Media Links</p>
           <ul class="media-link">
             <li>
