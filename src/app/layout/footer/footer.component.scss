@@ -35,14 +35,14 @@
     margin: 0 auto;
   }
 }
-.btn-outline-secondary {
+
+.btn-gold {
   background-color: $color-gold;
   border-color: $color-gold;
   color: $color-black;
-}
 
-.btn-outline-secondary:hover {
-  background-color: transparent;
-  border-color: $color-gold;
-  color: $color-white;
+  &:hover {
+    background-color: transparent;
+    color: $color-white;
+  }
 }

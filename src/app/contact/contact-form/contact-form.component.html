@@ -2,11 +2,107 @@
   <div class="container">
     <div class="row py-5">
       <div class="col-lg-8">
+        <p class="px-5">
+          Contact Us to receive more detailed information about your favourite
+          team
+        </p>
         <div class="p-5">
-          <form></form>
+          <form
+            [formGroup]="contactForm"
+            autocomplete="off"
+            (ngSubmit)="onSubmit()"
+          >
+            <div class="mb-3">
+              <input
+                type="text"
+                class="form-control"
+                id="name"
+                formControlName="name"
+                placeholder="name"
+              />
+              <span
+                class="form-text small"
+                *ngIf="
+                  !contactForm.get('name').valid &&
+                  contactForm.get('name').touched
+                "
+              >
+                Please enter a valid name.
+              </span>
+              <label for="name" class="form-label">Name</label>
+            </div>
+            <div class="mb-3">
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                formControlName="email"
+                placeholder="email"
+              />
+              <span
+                class="form-text small"
+                *ngIf="
+                  !contactForm.get('email').valid &&
+                  contactForm.get('email').touched
+                "
+              >
+                Please enter a valid email.
+              </span>
+              <label for="email" class="form-label">Email</label>
+            </div>
+            <div class="mb-3">
+              <input
+                type="text"
+                class="form-control"
+                id="interest"
+                formControlName="interest"
+                placeholder="interest"
+              />
+              <span
+                class="form-text small"
+                *ngIf="
+                  !contactForm.get('interest').valid &&
+                  contactForm.get('interest').touched
+                "
+              >
+                Please enter a team.
+              </span>
+              <label for="interest" class="form-label">Interest</label>
+            </div>
+            <div class="mb-3">
+              <input
+                type="text"
+                class="form-control"
+                id="phone"
+                formControlName="phone"
+                placeholder="phone"
+              />
+              <span
+                class="form-text small"
+                *ngIf="
+                  !contactForm.get('phone').valid &&
+                  contactForm.get('phone').touched
+                "
+              >
+                Please enter a valid 10 digit phone No.
+              </span>
+              <label for="phone" class="form-label">Phone</label>
+            </div>
+            <div class="mb-3">
+              <input
+                type="text"
+                class="form-control"
+                id="message"
+                formControlName="message"
+                placeholder="message"
+              />
+              <label for="message" class="form-label">Message</label>
+            </div>
+            <button class="btn btn-gold">Send</button>
+          </form>
         </div>
       </div>
-      <div class="col-lg-4">
+      <div class="col-lg-4 media-box">
         <div class="p-5">
           <ul class="media-link">
             <li>
