@@ -26,6 +26,15 @@ export class TeamService {
       'Oxfordshire, England',
       ['Acronis', 'Versa']
     ),
+    new TeamModel(
+      'McLaren',
+      9,
+      'FW43B',
+      'Simon Roberts',
+      ['Daniel Riccardo', 'Lando Norris'],
+      'Oxfordshire, England',
+      ['Acronis', 'Versa']
+    ),
   ];
 
   getTeamArray() {

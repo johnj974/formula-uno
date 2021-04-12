@@ -1,0 +1,25 @@
+@import "../../../styles/helpers/variables";
+
+.team {
+  background-color: $color-black;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.Ferrari {
+  color: white;
+  background-color: red;
+}
+
+.Williams {
+  color: black;
+  background-color: blue;
+}
+
+.McLaren {
+  color: black;
+  background-color: rgb(255, 123, 0);
+}
