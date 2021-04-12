@@ -9,7 +9,7 @@ export class TeamService {
 
   teamServiceArray: TeamModel[] = [
     new TeamModel(
-      'Ferrari',
+      'Scuderia Ferrari',
       16,
       'SF21',
       'Mattia Binotto',
@@ -18,7 +18,7 @@ export class TeamService {
       ['Shell', 'Ray-Ban', 'Kaspersky Lab']
     ),
     new TeamModel(
-      'Williams',
+      'Williams Racing',
       9,
       'FW43B',
       'Simon Roberts',
@@ -27,12 +27,12 @@ export class TeamService {
       ['Acronis', 'Versa']
     ),
     new TeamModel(
-      'McLaren',
-      9,
-      'FW43B',
-      'Simon Roberts',
+      'McLaren F1 Team',
+      8,
+      'MCL35M',
+      'Zak Brown',
       ['Daniel Riccardo', 'Lando Norris'],
-      'Oxfordshire, England',
+      'Surrey, England',
       ['Acronis', 'Versa']
     ),
   ];

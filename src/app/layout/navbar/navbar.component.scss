@@ -3,6 +3,7 @@
 .navbar {
   background-color: $color-black;
   font-size: 1.6rem;
+  border-bottom: 2px solid $color-gold;
 
   & li a {
     color: $color-white;
