@@ -3,11 +3,11 @@
     <div class="row">
       <div class="col">
         <h3
-          *ngFor="let team of teamInfoArray"
+          *ngFor="let team of teamInfoArray; let id = index"
           [class]="team.name"
           class="team-banner p-5 m-0"
         >
-          <a (click)="onShowTeam(team.name)"> {{ team.name }}</a>
+          <a (click)="onShowTeam(id, team.name)"> {{ team.name }}</a>
         </h3>
       </div>
     </div>

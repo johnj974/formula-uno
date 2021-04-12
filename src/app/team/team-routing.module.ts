@@ -5,7 +5,7 @@ import { TeamBioComponent } from './team-bio/team-bio.component';
 
 const routes: Routes = [
   { path: '', component: MainTeamComponent },
-  { path: ':teamName', component: TeamBioComponent },
+  { path: ':id/:teamName', component: TeamBioComponent },
 ];
 
 @NgModule({

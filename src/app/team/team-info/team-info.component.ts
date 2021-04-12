@@ -23,7 +23,7 @@ export class TeamInfoComponent implements OnInit {
     this.teamInfoArray = this.teamService.getTeamArray();
   }
 
-  onShowTeam(teamName: string) {
-    this.router.navigate(['teams', teamName]);
+  onShowTeam(id: number, teamName: string) {
+    this.router.navigate(['teams', id, teamName]);
   }
 }

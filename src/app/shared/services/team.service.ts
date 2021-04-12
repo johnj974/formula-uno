@@ -40,5 +40,9 @@ export class TeamService {
   getTeamArray() {
     return this.teamServiceArray.slice();
   }
+
+  onGetTeam(id: number) {
+    return this.teamServiceArray[id];
+  }
   constructor() {}
 }
