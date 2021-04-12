@@ -8,7 +8,20 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
 })
 export class ContactFormComponent implements OnInit {
   //.
+  test: 'placeholder';
   contactForm: FormGroup;
+  teams: string[] = [
+    'Alpha Romeo',
+    'Alpha Tauri',
+    'Alpine',
+    'Aston Martin',
+    'Ferrari',
+    'Haas',
+    'Mercedes',
+    'McLaren',
+    'Red Bull',
+    'Williams',
+  ];
 
   constructor() {}
 
@@ -22,6 +35,10 @@ export class ContactFormComponent implements OnInit {
         Validators.pattern('[0-9]{10}'),
       ]),
       message: new FormControl(null),
+    });
+
+    this.contactForm.patchValue({
+      interest: this.test,
     });
   }
 

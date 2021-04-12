@@ -18,7 +18,8 @@ form {
     transition: all 0.3s;
   }
 
-  input {
+  input,
+  select {
     border: transparent;
     border-bottom: 2px solid $color-gold;
     font-size: 1.5rem;
@@ -26,6 +27,12 @@ form {
 }
 
 input:placeholder-shown ~ label {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-4rem);
+}
+
+select:placeholder-shown ~ label {
   opacity: 0;
   visibility: hidden;
   transform: translateY(-4rem);
@@ -69,5 +76,14 @@ li a:hover {
   &:hover {
     background-color: transparent;
     color: $color-white;
+  }
+}
+
+.option-class {
+  color: $color-gold;
+  background-color: $color-black;
+
+  &::selection {
+    color: red;
   }
 }

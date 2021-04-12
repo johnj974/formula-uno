@@ -2,11 +2,11 @@
   <div class="container">
     <div class="row py-5">
       <div class="col-lg-8">
-        <p class="px-5">
-          Contact Us to receive more detailed information about your favourite
-          team
-        </p>
         <div class="p-5">
+          <p class="p-4">
+            Contact Us to receive more detailed information about your favourite
+            team
+          </p>
           <form
             [formGroup]="contactForm"
             autocomplete="off"
@@ -51,13 +51,17 @@
               <label for="email" class="form-label">Email</label>
             </div>
             <div class="mb-3">
-              <input
+              <select
                 type="text"
                 class="form-control"
                 id="interest"
                 formControlName="interest"
                 placeholder="interest"
-              />
+              >
+                <option [value]="winner" *ngFor="let team of teams" class="option-class">
+                  {{ team }}
+                </option>
+              </select>
               <span
                 class="form-text small"
                 *ngIf="
@@ -67,7 +71,7 @@
               >
                 Please enter a team.
               </span>
-              <label for="interest" class="form-label">Interest</label>
+              <label for="interest" class="form-label">Team</label>
             </div>
             <div class="mb-3">
               <input
