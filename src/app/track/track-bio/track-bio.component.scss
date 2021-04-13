@@ -1,4 +1,10 @@
 @import "../../../styles/helpers/variables";
+
+// ADD TO .TRACK-HEADER WHEN STYLING COMPLETE
+.track-image {
+  border-bottom: 2px solid $color-black;
+}
+
 .track-info {
   border-left: 2px solid $color-black;
 }

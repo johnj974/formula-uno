@@ -1,7 +1,7 @@
 <section>
   <div class="container py-5">
     <div class="row py-5">
-      <div class="col-lg-6">image</div>
+      <div class="col-lg-6 track-image">image</div>
       <div class="col-lg-6 track-info">
         <div class="row track-header">
           <div class="col">
@@ -11,7 +11,14 @@
         </div>
         <div class="row">
           <div class="col">
-            <p>{{ track.distance }}</p>
+            <p>Track Length: {{ track.distance }}</p>
+            <p>Laps: {{ track.laps }}</p>
+            <p>Type: {{ track.type }}</p>
+            <p>Corners: {{ track.turns }}</p>
+            <p>Direction: {{ track.direction }}</p>
+            <p>Opened: {{ track.opened }}</p>
+            <p>Capacity: {{ track.capacity }}</p>
+            <p>FIA Grade: {{ track.grade }}</p>
           </div>
         </div>
       </div>
