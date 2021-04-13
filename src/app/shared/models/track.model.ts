@@ -4,6 +4,8 @@ export class TrackModel {
     public country: string,
     public location: string,
     public distance: string,
-    public laps: number
+    public laps: number,
+    public latitude: number,
+    public longitude: number
   ) {}
 }

@@ -10,8 +10,8 @@ import { TeamService } from 'src/app/shared/services/team.service';
 })
 export class TeamBioComponent implements OnInit {
   //.
-
   team: TeamModel;
+
   constructor(
     private teamService: TeamService,
     private route: ActivatedRoute

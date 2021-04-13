@@ -2,7 +2,9 @@
   <div class="container">
     <div class="row">
       <div class="col">
-        <p *ngFor="let track of trackInfoArray">{{ track.name }}</p>
+        <p *ngFor="let track of trackInfoArray; let id = index">
+          <a (click)="toTrackBio(id, track.name)"> {{ track.name }} </a>
+        </p>
       </div>
     </div>
   </div>
