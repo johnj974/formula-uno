@@ -1,1 +1,23 @@
-<p>track-bio works!</p>
+<section>
+  <div class="container py-5">
+    <div class="row py-5">
+      <div class="col-lg-6">image</div>
+      <div class="col-lg-6 track-info">
+        <div class="row track-header">
+          <div class="col">
+            <h3>{{ track.name }}</h3>
+            <h5>{{ track.location }}</h5>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <p>{{ track.distance }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section>
+  <app-track-map></app-track-map>
+</section>

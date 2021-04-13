@@ -32,5 +32,9 @@ export class TrackService {
     return this.trackServiceArray.slice();
   }
 
+  onGetTrack(id: number) {
+    return this.trackServiceArray[id];
+  }
+
   constructor() {}
 }

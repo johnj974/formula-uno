@@ -1,14 +1,19 @@
 <section>
-  <div class="container-fluid">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6">
-          <div>
-            <p>{{ team.name }}</p>
+  <div class="container py-5">
+    <div class="row py-5">
+      <div class="col-lg-6">image</div>
+      <div class="col-lg-6 team-info">
+        <div class="row team-header">
+          <div class="col">
+            <h3>{{ team.name }}</h3>
+            <h5>{{ team.homeBase }}</h5>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
             <p>{{ team.car }}</p>
           </div>
         </div>
-        <div class="col-lg-6">image</div>
       </div>
     </div>
   </div>
