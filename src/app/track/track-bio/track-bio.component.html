@@ -1,6 +1,6 @@
 <section>
-  <div class="container py-5">
-    <div class="row">
+  <div class="container-fluid">
+    <div class="row pt-2">
       <div class="col track-link">
         <ul *ngFor="let track of trackList; let id = index">
           <a (click)="onTrackChange(id, track.name)"
@@ -9,8 +9,12 @@
         </ul>
       </div>
     </div>
+  </div>
+  <div class="container py-5">
     <div class="row py-5">
-      <div class="col-lg-6 track-image">image</div>
+      <div class="col-lg-6 track-image">
+        <img src="{{ track.image }}" class="img-fluid" alt="" />
+      </div>
       <div class="col-lg-6 track-info">
         <div class="row track-header">
           <div class="col">

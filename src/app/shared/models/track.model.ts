@@ -12,6 +12,7 @@ export class TrackModel {
     public turns: number,
     public opened: string,
     public capacity: number,
-    public grade: number
+    public grade: number,
+    public image: string
   ) {}
 }

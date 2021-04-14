@@ -1,6 +1,11 @@
 @import "../../../styles/helpers/variables";
 
 // ADD TO .TRACK-HEADER WHEN STYLING COMPLETE
+
+.container-fluid {
+  background-color: $color-black;
+}
+
 .track-image {
   border-bottom: 2px solid $color-black;
 }
@@ -30,5 +35,12 @@
   a {
     cursor: pointer;
     color: $color-gold;
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
+}
+
+img {
 }

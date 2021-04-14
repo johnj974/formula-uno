@@ -21,7 +21,8 @@ export class TrackService {
       14,
       '20 November 1953',
       800000,
-      1
+      1,
+      '../../../assets/images/Australia_Circuit.png'
     ),
     new TrackModel(
       'Autodroma Nazionale di Monza',
@@ -36,7 +37,8 @@ export class TrackService {
       11,
       '3 September 1922',
       118865,
-      1
+      1,
+      '../../../assets/images/monza.png'
     ),
   ];
 
