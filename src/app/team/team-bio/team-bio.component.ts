@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, Params } from '@angular/router';
+import { ActivatedRoute, Params, Router } from '@angular/router';
 import { TeamModel } from 'src/app/shared/models/team.model';
 import { TeamService } from 'src/app/shared/services/team.service';
 
@@ -11,10 +11,12 @@ import { TeamService } from 'src/app/shared/services/team.service';
 export class TeamBioComponent implements OnInit {
   //.
   team: TeamModel;
+  teamList: TeamModel[] = [];
 
   constructor(
     private teamService: TeamService,
-    private route: ActivatedRoute
+    private route: ActivatedRoute,
+    private router: Router
   ) {}
 
   ngOnInit(): void {
@@ -22,5 +24,11 @@ export class TeamBioComponent implements OnInit {
       this.team = this.teamService.onGetTeam(+params.id);
       console.log(this.team);
     });
+
+    this.teamList = this.teamService.getTeamArray();
+  }
+
+  onChangeTeam(id: number, name: string) {
+    this.router.navigate(['teams', id, name]);
   }
 }

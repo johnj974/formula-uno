@@ -1,7 +1,18 @@
 <section>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col team-link">
+        <ul *ngFor="let team of teamList; let id = index">
+          <a (click)="onChangeTeam(id, team.name)"
+            ><li>{{ team.name }}</li></a
+          >
+        </ul>
+      </div>
+    </div>
+  </div>
   <div class="container py-5">
     <div class="row py-5">
-      <div class="col-lg-6">image</div>
+      <div class="col-lg-6 team-image">image</div>
       <div class="col-lg-6 team-info">
         <div class="row team-header">
           <div class="col">
@@ -11,7 +22,11 @@
         </div>
         <div class="row">
           <div class="col">
-            <p>{{ team.car }}</p>
+            <p>Team Director: {{ team.teamDirector }}</p>
+            <p>Car: {{ team.car }}</p>
+            <p>Constructor Titles: {{ team.constructorTitles }}</p>
+            <p>Driver Titles:</p>
+            <p>Drivers: {{ team.drivers }}</p>
           </div>
         </div>
       </div>

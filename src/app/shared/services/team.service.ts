@@ -13,7 +13,7 @@ export class TeamService {
       16,
       'SF21',
       'Mattia Binotto',
-      ['Charles LeClerc', 'Carlos Sainz Jr'],
+      ['Charles LeClerc', ' Carlos Sainz Jr'],
       'Maranello, Italy',
       ['Shell', 'Ray-Ban', 'Kaspersky Lab']
     ),
@@ -22,7 +22,7 @@ export class TeamService {
       9,
       'FW43B',
       'Simon Roberts',
-      ['George Russell', 'Nicolas Latifi'],
+      ['George Russell', ' Nicolas Latifi'],
       'Oxfordshire, England',
       ['Acronis', 'Versa']
     ),
@@ -31,7 +31,7 @@ export class TeamService {
       8,
       'MCL35M',
       'Zak Brown',
-      ['Daniel Riccardo', 'Lando Norris'],
+      ['Daniel Riccardo', ' Lando Norris'],
       'Surrey, England',
       ['Acronis', 'Versa']
     ),
