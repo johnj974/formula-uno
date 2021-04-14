@@ -15,7 +15,11 @@ export class TeamService {
       'Mattia Binotto',
       ['Charles LeClerc', ' Carlos Sainz Jr'],
       'Maranello, Italy',
-      ['Shell', 'Ray-Ban', 'Kaspersky Lab']
+      ['Shell', 'Ray-Ban', 'Kaspersky Lab'],
+      'Ferrari',
+      238,
+      15,
+      '1950 Monaco'
     ),
     new TeamModel(
       'Williams Racing',
@@ -24,7 +28,11 @@ export class TeamService {
       'Simon Roberts',
       ['George Russell', ' Nicolas Latifi'],
       'Oxfordshire, England',
-      ['Acronis', 'Versa']
+      ['Acronis', 'Versa'],
+      'Mercedes',
+      114,
+      7,
+      '1978 Argentina'
     ),
     new TeamModel(
       'McLaren F1 Team',
@@ -33,7 +41,11 @@ export class TeamService {
       'Zak Brown',
       ['Daniel Riccardo', ' Lando Norris'],
       'Surrey, England',
-      ['Acronis', 'Versa']
+      ['Acronis', 'Versa'],
+      'Mercedes',
+      182,
+      12,
+      '1966 Monaco'
     ),
   ];
 

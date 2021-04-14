@@ -1,6 +1,6 @@
 # Formula-Uno
 
-<img src="src/app/assets/images/screenshot.png">
+<img src="src/assets/images/screenshot.png">
 
 ## Technologies Used
 

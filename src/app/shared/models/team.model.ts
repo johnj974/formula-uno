@@ -6,7 +6,11 @@ export class TeamModel {
     public teamDirector: string,
     public drivers: string[],
     public homeBase: string,
-    public sponsors: string[]
+    public sponsors: string[],
+    public engine: string,
+    public wins: number,
+    public driverTitles: number,
+    public firstGrandPrix: string
   ) {}
 }
 //   constructor(
