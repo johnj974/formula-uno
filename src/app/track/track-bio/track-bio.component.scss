@@ -12,3 +12,23 @@
 .track-header {
   border-bottom: 2px solid $color-black;
 }
+
+.track-link {
+  display: flex;
+  flex-direction: row;
+
+  & ul {
+    padding-left: 2rem;
+  }
+
+  & li {
+    margin: 0 auto;
+    margin-bottom: 0;
+    list-style: none;
+  }
+
+  a {
+    cursor: pointer;
+    color: $color-gold;
+  }
+}

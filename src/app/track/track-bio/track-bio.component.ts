@@ -1,5 +1,5 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
-import { ActivatedRoute, Params } from '@angular/router';
+import { ActivatedRoute, Params, Router } from '@angular/router';
 import { Subscription } from 'rxjs';
 import { TrackModel } from 'src/app/shared/models/track.model';
 import { TrackService } from 'src/app/shared/services/track.service';
@@ -14,9 +14,11 @@ export class TrackBioComponent implements OnInit, OnDestroy {
   trackSubscription: Subscription;
   trackId: number;
   track: TrackModel;
+  trackList: TrackModel[] = [];
   constructor(
     private trackService: TrackService,
-    private route: ActivatedRoute
+    private route: ActivatedRoute,
+    private router: Router
   ) {}
 
   ngOnInit(): void {
@@ -24,6 +26,12 @@ export class TrackBioComponent implements OnInit, OnDestroy {
       this.trackId = +params.id;
       this.track = this.trackService.onGetTrack(this.trackId);
     });
+
+    this.trackList = this.trackService.getTrackArray();
+  }
+
+  onTrackChange(id: number, trackName: string) {
+    this.router.navigate(['tracks', id, trackName]);
   }
 
   ngOnDestroy() {
