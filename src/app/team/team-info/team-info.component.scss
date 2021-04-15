@@ -10,16 +10,106 @@ a {
 }
 
 .Ferrari {
-  color: white;
-  background-color: red;
+  color: $color-white;
+  //background-color: $color-ferrariOne;
+  background-image: linear-gradient(
+    to right,
+    $color-ferrariOne,
+    70%,
+    $color-ferrariTwo
+  );
 }
 
 .Williams {
-  color: black;
-  background-color: blue;
+  color: $color-white;
+  //background-color: $color-williamsOne;
+  background-image: linear-gradient(
+    to right,
+    $color-williamsOne,
+    70%,
+    $color-white
+  );
 }
 
 .McLaren {
-  color: black;
-  background-color: rgb(255, 123, 0);
+  color: $color-mclarenTwo;
+  //background-color: $color-mclarenOne;
+  background-image: linear-gradient(
+    to right,
+    $color-mclarenOne,
+    70%,
+    $color-mclarenTwo
+  );
+}
+
+.Aston {
+  color: $color-astonTwo;
+  background-image: linear-gradient(
+    to right,
+    $color-astonOne,
+    90%,
+    $color-astonTwo
+  );
+}
+
+.Mercedes-AMG {
+  color: $color-mercThree;
+  background-image: linear-gradient(
+    to right,
+    $color-mercOne,
+    90%,
+    $color-mercTwo
+  );
+}
+
+.Alpha {
+  color: $color-white;
+  background-image: linear-gradient(
+    to right,
+    $color-ferrariOne,
+    70%,
+    $color-white
+  );
+}
+
+.Alpine {
+  color: $color-white;
+  background-image: linear-gradient(
+    to right,
+    $color-alpineOne,
+    70%,
+    $color-white,
+    85%,
+    $color-ferrariOne
+  );
+}
+
+.Bull {
+  color: $color-ferrariOne;
+  background-image: linear-gradient(
+    to right,
+    $color-bullOne,
+    90%,
+    $color-bullTwo
+  );
+}
+
+.Haas {
+  color: $color-ferrariOne;
+  background-image: linear-gradient(
+    to right,
+    $color-white,
+    80%,
+    $color-williamsOne
+  );
+}
+
+.Alpha {
+  color: $color-white;
+  background-image: linear-gradient(
+    to right,
+    $color-alphaOne,
+    70%,
+    $color-white
+  );
 }
