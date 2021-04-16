@@ -1,10 +1,10 @@
-<section>
+<section class="team-section" [class]="team.name">
   <div class="container-fluid">
     <div class="row">
       <div class="col team-link">
         <ul *ngFor="let team of teamList; let id = index">
           <a (click)="onChangeTeam(id, team.name)"
-            ><li>{{ team.name }}</li></a
+            ><li>{{ team.name | wordCut }}</li></a
           >
         </ul>
       </div>

@@ -9,7 +9,7 @@ export class TeamService {
 
   teamServiceArray: TeamModel[] = [
     new TeamModel(
-      'Scuderia Mission Winnow Ferrari',
+      'Ferrari Scuderia Mission Winnow',
       16,
       'Ferrari SF21',
       'Mattia Binotto',
@@ -101,7 +101,7 @@ export class TeamService {
     ),
 
     new TeamModel(
-      'Mercedes-AMG Petronas F1 Team',
+      'Mercedes AMG Petronas F1 Team',
       7,
       'F1 W12 E Performance',
       'Toto Wolff',
@@ -128,7 +128,7 @@ export class TeamService {
       '2016 Australia'
     ),
     new TeamModel(
-      'Scuderia Alpha Tauri Honda',
+      'Alpha Tauri Scuderia Honda',
       0,
       'Alpha Tauri AT02',
       'Franz Tost',
