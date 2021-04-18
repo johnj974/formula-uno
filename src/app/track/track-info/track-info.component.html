@@ -1,10 +1,16 @@
-<section>
+<section class="team-info">
   <div class="container">
-    <div class="row">
-      <div class="col">
-        <p *ngFor="let track of trackInfoArray; let id = index">
-          <a (click)="toTrackBio(id, track.name)"> {{ track.name }} </a>
-        </p>
+    <div class="row py-5">
+      <div
+        class="col-lg-6 text-center py-4"
+        *ngFor="let track of trackInfoArray; let id = index"
+      >
+        <h4 class="py-4 clearfix">
+          <a (click)="toTrackBio(id, track.name)">
+            {{ track.name }}
+          </a>
+          <span><img src="{{ track.flag }}" alt="" /></span>
+        </h4>
       </div>
     </div>
   </div>

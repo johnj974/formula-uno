@@ -1,0 +1,47 @@
+@import "../../../styles/helpers/variables";
+
+.team-info {
+  background-image: linear-gradient(
+    to top right,
+    $color-ferrariOne 0 10%,
+    $color-williamsOne 10% 20%,
+    $color-mclarenOne 20% 30%,
+    $color-astonOne 30% 40%,
+    $color-alpineOne 40% 50%,
+    $color-ferrariOne 50% 60%,
+    $color-bullOne 60% 70%,
+    $color-mercOne 70% 80%,
+    $color-white 80% 90%,
+    $color-alphaOne 90% 100%
+  );
+}
+
+h4 {
+  border: 1px solid $color-gold;
+  color: $color-gold;
+  background-color: $color-black;
+
+  a {
+    cursor: pointer;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  span {
+    float: right;
+    padding-right: 1rem;
+
+    img {
+      height: 50px;
+      width: 100px;
+    }
+  }
+
+  .clearfix::after {
+    content: "";
+    clear: both;
+    display: block;
+  }
+}

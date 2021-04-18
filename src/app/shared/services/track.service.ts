@@ -22,7 +22,8 @@ export class TrackService {
       '20 November 1953',
       80000,
       1,
-      '../../../assets/images/Australia_Circuit.png'
+      'assets/images/Australia_Circuit.png',
+      'assets/images/australia.gif'
     ),
     new TrackModel(
       'Autodroma Nazionale di Monza',
@@ -38,7 +39,8 @@ export class TrackService {
       '3 September 1922',
       118865,
       1,
-      '../../../assets/images/monza.png'
+      'assets/images/monza.png',
+      'assets/images/italy.gif'
     ),
     new TrackModel(
       'Circuit de Monaco',
@@ -54,7 +56,8 @@ export class TrackService {
       ' 1929',
       37000,
       1,
-      '../../../assets/images/Monoco_Circuit.png'
+      'assets/images/Monoco_Circuit.png',
+      'assets/images/monaco.gif'
     ),
     new TrackModel(
       'Circuit Gilles Villeneuve',
@@ -70,7 +73,8 @@ export class TrackService {
       ' 1961',
       100000,
       1,
-      '../../../assets/images/Canada_Circuit.png'
+      'assets/images/Canada_Circuit.png',
+      'assets/images/canada.gif'
     ),
     new TrackModel(
       'Shanghai International Circuit',
@@ -86,7 +90,8 @@ export class TrackService {
       ' 2004',
       200000,
       1,
-      '../../../assets/images/chinese_circuit.png'
+      'assets/images/chinese_circuit.png',
+      'assets/images/china.gif'
     ),
     new TrackModel(
       'Sochi Autodrom',
@@ -102,7 +107,8 @@ export class TrackService {
       '21 September 2014',
       55000,
       1,
-      '../../../assets/images/Russia_Circuit.png'
+      'assets/images/Russia_Circuit.png',
+      'assets/images/russia.gif'
     ),
   ];
 
