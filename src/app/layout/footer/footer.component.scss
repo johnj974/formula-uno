@@ -52,3 +52,18 @@
   display: flex;
   justify-content: center;
 }
+
+@media only screen and (max-width: 992px) {
+  h4 {
+    text-align: center;
+  }
+  .navigate-box ul {
+    flex-direction: row;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .navigate-box ul {
+    flex-direction: column;
+  }
+}

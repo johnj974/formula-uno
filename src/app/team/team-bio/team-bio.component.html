@@ -14,7 +14,7 @@
     <div class="row py-5">
       <div class="col-lg-6 team-image">
         <div class="image-box">
-          <img src="{{ team.image }}" alt="" class="img-fluid" />
+          <img src="{{ team.image }}" alt="{{ team.name }}" class="img-fluid" />
         </div>
       </div>
       <div class="col-lg-6 team-info">
@@ -24,7 +24,7 @@
             <h5>{{ team.homeBase }}</h5>
           </div>
         </div>
-        <div class="row">
+        <div class="row team-bio">
           <div class="col">
             <p>Team Director: {{ team.teamDirector }}</p>
             <p>Chassis: {{ team.car }}</p>

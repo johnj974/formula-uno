@@ -110,6 +110,40 @@ export class TrackService {
       'assets/images/Russia_Circuit.png',
       'assets/images/russia.gif'
     ),
+    new TrackModel(
+      'Circuit Paul Ricard',
+      'Race Circuit',
+      'Le Castellet, France',
+      '5.842',
+      53,
+      43.250556,
+      5.791667,
+      16,
+      'Clockwise',
+      15,
+      '19 April 1970',
+      90000,
+      1,
+      'assets/images/france_circuit.png',
+      'assets/images/france.gif'
+    ),
+    new TrackModel(
+      'Yas Marina Circuit',
+      'Race Circuit',
+      'Abu Dhabi, UAE',
+      '5.554',
+      55,
+      24.467222,
+      54.603056,
+      12,
+      'Anti-Clockwise',
+      21,
+      '7 October 2009',
+      60000,
+      1,
+      'assets/images/Abu_Dhabi_Circuit.png',
+      'assets/images/uae.gif'
+    ),
   ];
 
   getTrackArray() {

@@ -11,16 +11,9 @@
   border-left: 2px solid $color-black;
 }
 
-.team-header {
-  border-bottom: 2px solid $color-black;
-}
-
+.team-header,
 .team-image {
   border-bottom: 2px solid $color-black;
-
-  // & .image-box {
-  //   margin: 0 auto;
-  // }
 }
 
 .team-link {
@@ -151,4 +144,17 @@
     70%,
     $color-white
   );
+}
+
+@media only screen and (max-width: 992px) {
+  .image-box {
+    padding-bottom: 2rem;
+  }
+  .team-info {
+    border-left: none;
+  }
+
+  .team-bio {
+    padding-top: 2rem;
+  }
 }
