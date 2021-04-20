@@ -1,0 +1,23 @@
+.btn-gold {
+  background-color: $color-gold;
+  border-color: $color-gold;
+  font-size: 1.6rem;
+  color: $color-black;
+
+  &:hover {
+    background-color: transparent;
+    color: $color-white;
+  }
+}
+
+.btn-altGold {
+  background-color: $color-black;
+  border-color: $color-gold;
+  font-size: 1.6rem;
+  color: $color-gold;
+
+  &:hover {
+    background-color: $color-gold;
+    color: $color-black;
+  }
+}
