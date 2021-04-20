@@ -2,7 +2,26 @@
   <div class="container">
     <div class="row py-5">
       <div class="col-lg-6">
-        <div>images</div>
+        <div>
+          <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="assets/images/ferrari-team.jpg"
+                  class="d-block w-100 img-fluid"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item" *ngFor="let team of receivedArray">
+                <img
+                  src="{{ team.image }}"
+                  class="d-block w-100 img-fluid"
+                  alt="..."
+                />
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
       <div class="col-lg-6">
         <div>

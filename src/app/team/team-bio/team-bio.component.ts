@@ -22,7 +22,6 @@ export class TeamBioComponent implements OnInit {
   ngOnInit(): void {
     this.route.params.subscribe((params: Params) => {
       this.team = this.teamService.onGetTeam(+params.id);
-      console.log(this.team);
     });
 
     this.teamList = this.teamService.getTeamArray();
