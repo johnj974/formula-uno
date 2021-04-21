@@ -3,5 +3,10 @@
 @import "../../../styles/helpers/team";
 
 .race {
-  height: 100%;
+  height: 25rem;
+}
+
+.race-section {
+  background-color: $color-black;
+  color: $color-white;
 }

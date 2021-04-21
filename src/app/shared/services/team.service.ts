@@ -107,7 +107,7 @@ export class TeamService {
       'Toto Wolff',
       ['Lewis Hamilton', ' Valterri Bottas'],
       'Northamptonshire, England',
-      'assets/images/alpine-team.jpg',
+      'assets/images/mercedes-team.jpg',
       'Mercedes M12 E Performance',
       116,
       9,

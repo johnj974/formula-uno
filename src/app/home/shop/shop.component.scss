@@ -1,6 +1,15 @@
 @import "../../../styles/helpers/variables";
 @import "../../../styles/helpers/button";
 
+.shop-section {
+  background-color: $color-black;
+  color: $color-white;
+}
+
+img {
+  height: 25rem;
+}
+
 @media all and (transform-3d), (-webkit-transform-3d) {
   .active.carousel-item-left,
   .carousel-item-prev:not(.carousel-item-right) {
