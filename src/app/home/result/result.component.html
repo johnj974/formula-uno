@@ -20,7 +20,30 @@
         </div>
       </div>
       <div class="col-lg-6">
-        <div>images</div>
+        <h3>{{ raceName }} Podium</h3>
+        <h5>{{ round }}nd Race Of The Season</h5>
+        <div>
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Position</th>
+                <th scope="col">Driver</th>
+                <th scope="col">Points</th>
+                <th scope="col">Number</th>
+              </tr>
+            </thead>
+            <tbody *ngFor="let result of resultsArray; let i = index">
+              <tr *ngIf="i < 3">
+                <th scope="row">{{ i + 1 }}</th>
+                <td>
+                  {{ result.Driver.givenName }} {{ result.Driver.familyName }}
+                </td>
+                <td>{{ result.points }}</td>
+                <td>{{ result.number }}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
     </div>
   </div>

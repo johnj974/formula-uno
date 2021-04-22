@@ -6,8 +6,7 @@ import { Injectable } from '@angular/core';
 })
 export class ResultsService {
   constructor(private http: HttpClient) {}
-
   getResult() {
-    return this.http.get('http://ergast.com/api/f1/current/last/results');
+    return this.http.get('http://ergast.com/api/f1/current/last/results.json');
   }
 }
