@@ -23,7 +23,7 @@ export class ResultComponent implements OnInit {
       this.raceName = this.results.MRData.RaceTable.Races[0].raceName;
       this.round = this.results.MRData.RaceTable.Races[0].round;
       this.resultsArray = this.results.MRData.RaceTable.Races[0].Results;
-      console.log(this.resultsArray);
+      //console.log(this.resultsArray);
     });
   }
 
