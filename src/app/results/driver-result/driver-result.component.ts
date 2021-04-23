@@ -18,7 +18,8 @@ export class DriverResultComponent implements OnInit {
     this.resultsService.getDriverStanding().subscribe((data) => {
       this.receivedData = data;
       this.driverStandingArray = this.receivedData.MRData.StandingsTable.StandingsLists[0].DriverStandings;
-      console.log(this.driverStandingArray);
+
+      //console.log(this.driverStandingArray);
     });
   }
 
@@ -28,5 +29,5 @@ export class DriverResultComponent implements OnInit {
   // driver.Driver.familyName
   // driver.Driver.nationality
   // driver.Driver.permanentNumber
-  // driver.Constructors[i].constructorId
+  // driver.Constructors.0.constructorId
 }
