@@ -10,7 +10,10 @@
       <th scope="col">Points</th>
     </tr>
   </thead>
-  <tbody *ngFor="let driver of driverStandingArray; let i = index">
+  <tbody
+    *ngFor="let driver of driverStandingArray; let i = index"
+    [class]="driver.Constructors[0].name"
+  >
     <tr>
       <th scope="row">{{ i + 1 }}</th>
       <td>{{ driver.Driver.givenName }} {{ driver.Driver.familyName }}</td>

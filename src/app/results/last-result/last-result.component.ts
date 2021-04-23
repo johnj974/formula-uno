@@ -20,7 +20,6 @@ export class LastResultComponent implements OnInit {
       this.raceName = this.result.MRData.RaceTable.Races[0].raceName;
       this.round = this.result.MRData.RaceTable.Races[0].round;
       this.raceResultArray = this.result.MRData.RaceTable.Races[0].Results;
-      //console.log(this.raceResultArray);
     });
   }
 }

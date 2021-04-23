@@ -9,7 +9,7 @@
       <th scope="col">Points</th>
     </tr>
   </thead>
-  <tbody *ngFor="let team of teamStandArray">
+  <tbody *ngFor="let team of teamStandArray" [class]="team.Constructor.name">
     <tr>
       <td>{{ team.Constructor.name }}</td>
       <td>{{ team.position }}</td>
