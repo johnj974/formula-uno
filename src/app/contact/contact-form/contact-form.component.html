@@ -58,7 +58,11 @@
                 formControlName="interest"
                 placeholder="interest"
               >
-                <option [value]="winner" *ngFor="let team of teams" class="option-class">
+                <option
+                  [value]="winner"
+                  *ngFor="let team of teams"
+                  class="option-class"
+                >
                   {{ team }}
                 </option>
               </select>
@@ -102,7 +106,7 @@
               />
               <label for="message" class="form-label">Message</label>
             </div>
-            <button class="btn btn-gold">Send</button>
+            <button class="btn btn-altGold">Send</button>
           </form>
         </div>
       </div>
