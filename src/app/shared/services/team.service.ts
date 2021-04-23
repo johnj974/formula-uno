@@ -74,7 +74,7 @@ export class TeamService {
       '2021 Bahrain'
     ),
     new TeamModel(
-      'Alpha Romeo Racing Orlen',
+      'Alfa Romeo Racing Orlen',
       0,
       'C41',
       'Frederic Vasseur',

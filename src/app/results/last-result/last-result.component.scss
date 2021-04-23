@@ -1,3 +1,8 @@
 @import "../../../styles/helpers/variables";
 @import "../../../styles/helpers/button";
 @import "../../../styles/helpers/team";
+
+.title {
+  background-image: linear-gradient(to right, $color-black, $color-gold);
+  color: $color-white;
+}

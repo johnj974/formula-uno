@@ -1,28 +1,45 @@
-<h4>{{ raceName }}</h4>
-<p>Race No.{{ round }} of the season</p>
-<table class="table">
-  <thead>
-    <tr>
-      <th scope="col">Name</th>
-      <th scope="col">Driver No.</th>
-      <th scope="col">Team</th>
-      <th scope="col">Started</th>
+<section>
+  <div class="container">
+    <div class="row py-5 title text-center">
+      <div class="col">
+        <h4>
+          {{ raceName }}
+        </h4>
 
-      <th scope="col">Finished</th>
-      <th scope="col">Points</th>
-    </tr>
-  </thead>
-  <tbody
-    *ngFor="let driver of raceResultArray; let i = index"
-    [class]="driver.Constructor.name"
-  >
-    <tr>
-      <td>{{ driver.Driver.givenName }} {{ driver.Driver.familyName }}</td>
-      <td>{{ driver.Driver.permanentNumber }}</td>
-      <td>{{ driver.Constructor.name }}</td>
-      <td>{{ driver.grid }}</td>
-      <td>{{ i + 1 }}</td>
-      <td>{{ driver.points }}</td>
-    </tr>
-  </tbody>
-</table>
+        <p>Race No.{{ round }} of the season</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">Name</th>
+              <th scope="col">Driver No.</th>
+              <th scope="col">Team</th>
+              <th scope="col">Started</th>
+
+              <th scope="col">Finished</th>
+              <th scope="col">Points</th>
+            </tr>
+          </thead>
+          <tbody
+            *ngFor="let driver of raceResultArray; let i = index"
+            [class]="driver.Constructor.name"
+          >
+            <tr>
+              <td>
+                {{ driver.Driver.givenName }} {{ driver.Driver.familyName }}
+              </td>
+              <td>{{ driver.Driver.permanentNumber }}</td>
+              <td>{{ driver.Constructor.name }}</td>
+              <td>{{ driver.grid }}</td>
+              <td>{{ i + 1 }}</td>
+              <td>{{ driver.points }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>

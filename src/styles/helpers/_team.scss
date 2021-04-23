@@ -67,7 +67,7 @@
   );
 }
 
-.Alpha {
+.Alfa {
   color: $color-white;
   background-image: linear-gradient(
     to right,
@@ -109,7 +109,16 @@
   );
 }
 
-.Tauri {
+.Alpha {
+  color: $color-white;
+  background-image: linear-gradient(
+    to right,
+    $color-alphaOne,
+    70%,
+    $color-white
+  );
+}
+.AlphaTauri {
   color: $color-white;
   background-image: linear-gradient(
     to right,

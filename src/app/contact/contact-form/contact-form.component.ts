@@ -11,7 +11,7 @@ export class ContactFormComponent implements OnInit {
   test: 'placeholder';
   contactForm: FormGroup;
   teams: string[] = [
-    'Alpha Romeo',
+    ' Romeo',
     'Alpha Tauri',
     'Alpine',
     'Aston Martin',
