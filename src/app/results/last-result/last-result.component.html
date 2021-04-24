@@ -15,9 +15,9 @@
           <thead>
             <tr>
               <th scope="col">Name</th>
-              <th scope="col">Driver No.</th>
+              <th scope="col" class="d-none d-lg-table-cell">Driver No.</th>
               <th scope="col">Team</th>
-              <th scope="col">Started</th>
+              <th scope="col" class="d-none d-lg-table-cell">Started</th>
 
               <th scope="col">Finished</th>
               <th scope="col">Points</th>
@@ -31,9 +31,11 @@
               <td>
                 {{ driver.Driver.givenName }} {{ driver.Driver.familyName }}
               </td>
-              <td>{{ driver.Driver.permanentNumber }}</td>
+              <td class="d-none d-lg-table-cell">
+                {{ driver.Driver.permanentNumber }}
+              </td>
               <td>{{ driver.Constructor.name }}</td>
-              <td>{{ driver.grid }}</td>
+              <td class="d-none d-lg-table-cell">{{ driver.grid }}</td>
               <td>{{ i + 1 }}</td>
               <td>{{ driver.points }}</td>
             </tr>

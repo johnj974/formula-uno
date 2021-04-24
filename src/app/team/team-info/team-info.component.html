@@ -2,13 +2,16 @@
   <div class="container">
     <div class="row">
       <div class="col py-5">
-        <h3
+        <a
+          (click)="onShowTeam(id, team.name)"
           *ngFor="let team of teamInfoArray; let id = index"
-          [class]="team.name"
-          class="team-banner p-5 my-4"
         >
-          <a (click)="onShowTeam(id, team.name)"> {{ team.name }}</a>
-        </h3>
+          <div [class]="team.name">
+            <h3 class="p-5 my-4">
+              {{ team.name }}
+            </h3>
+          </div>
+        </a>
       </div>
     </div>
   </div>

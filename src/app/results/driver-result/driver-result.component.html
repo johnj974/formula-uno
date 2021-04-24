@@ -10,9 +10,9 @@
         <table class="table">
           <thead>
             <tr>
-              <th scope="col">Position</th>
+              <!-- <th scope="col" class="d-none d-lg-table-cell">Position</th> -->
               <th scope="col">Name</th>
-              <th scope="col">Driver No.</th>
+              <th scope="col" class="d-none d-lg-table-cell">Driver No.</th>
               <th scope="col">Team</th>
               <th scope="col">Wins</th>
               <th scope="col">Points</th>
@@ -23,11 +23,13 @@
             [class]="driver.Constructors[0].name"
           >
             <tr>
-              <th scope="row">{{ i + 1 }}</th>
+              <!-- <th scope="row" class="d-none d-lg-table-cell">{{ i + 1 }}</th> -->
               <td>
                 {{ driver.Driver.givenName }} {{ driver.Driver.familyName }}
               </td>
-              <td>{{ driver.Driver.permanentNumber }}</td>
+              <td class="d-none d-lg-table-cell">
+                {{ driver.Driver.permanentNumber }}
+              </td>
               <td>{{ driver.Constructors[0].name }}</td>
               <td>{{ driver.wins }}</td>
               <td>{{ driver.points }}</td>
