@@ -26,7 +26,7 @@ export class ResultsService {
   }
 
   getRaceCalender() {
-    this.http.get(' http://ergast.com/api/f1/current.json');
+    return this.http.get('http://ergast.com/api/f1/current.json');
   }
 }
 //

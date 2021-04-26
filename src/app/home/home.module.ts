@@ -8,6 +8,7 @@ import { TrackComponent } from './track/track.component';
 import { ResultComponent } from './result/result.component';
 import { ShopComponent } from './shop/shop.component';
 import { ContactComponent } from './contact/contact.component';
+import { CalenderComponent } from './calender/calender.component';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { ContactComponent } from './contact/contact.component';
     TrackComponent,
     ResultComponent,
     ShopComponent,
-    ContactComponent
+    ContactComponent,
+    CalenderComponent
   ],
   imports: [
     CommonModule,
