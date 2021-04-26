@@ -1,2 +1,10 @@
 @import "../../../styles/helpers/variables";
 @import "../../../styles/helpers/button";
+
+.race-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-image: linear-gradient(to top right, $color-gold, $color-black);
+}

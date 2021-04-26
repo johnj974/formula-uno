@@ -3,7 +3,7 @@
     <div class="row">
       <div class="col-lg-6 py-5">
         <div>
-          <h3>2021 Calender</h3>
+          <h3>2021 Season</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
             soluta sit cum maxime aspernatur voluptatum, labore consectetur!
@@ -20,8 +20,17 @@
           <button class="btn btn-altGold">See Merchandice</button>
         </div> -->
       </div>
-      <div class="col-lg-6">
-        <p>something</p>
+      <div class="col-lg-6 py-5">
+        <h3>Feature Races</h3>
+        <div class="race-info">
+          <div class="py-5">
+            <h3>{{ receivedRace.raceName }}</h3>
+            <h4>{{ receivedRace.Circuit.circuitName }}</h4>
+            <h4>{{ receivedRace.round }}</h4>
+            <h4>{{ receivedRace.date }}</h4>
+            <h4>{{ receivedRace.time }}</h4>
+          </div>
+        </div>
       </div>
     </div>
   </div>
