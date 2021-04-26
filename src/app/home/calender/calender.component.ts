@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { ResultsService } from 'src/app/shared/services/results.service';
 
 @Component({
@@ -20,7 +21,7 @@ export class CalenderComponent implements OnInit {
     time: '2222',
   };
 
-  constructor(private resultsService: ResultsService) {}
+  constructor(private resultsService: ResultsService, private router: Router) {}
 
   randomRace(arr) {
     let num = Math.floor(Math.random() * arr.length);
@@ -34,5 +35,9 @@ export class CalenderComponent implements OnInit {
       this.calenderArray = this.calender.MRData.RaceTable.Races;
       this.randomRace(this.calenderArray);
     });
+  }
+
+  toRaces() {
+    this.router.navigate(['races']);
   }
 }

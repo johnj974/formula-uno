@@ -1,6 +1,6 @@
 <section class="contact-section">
   <div class="container">
-    <div class="row">
+    <div class="row py-5">
       <div class="col-lg-6 py-5">
         <div>
           <h3>2021 Season</h3>
@@ -11,14 +11,12 @@
             natus, voluptates officiis beatae cupiditate, numquam iure quisquam
             asperiores doloremque commodi esse eius nisi! Voluptatem ipsam
             voluptate numquam in aliquid, soluta vitae facilis quaerat!fugiat
-            sequi! Corporis natus, voluptates officiis beatae cupiditate,
-            numquam iure quisquam asperiores doloremque commodi esse eius nisi!
-            Voluptatem ipsam voluptate numquam in aliquid
+            sequi!
           </p>
         </div>
-        <!-- <div class="button-container">
-          <button class="btn btn-altGold">See Merchandice</button>
-        </div> -->
+        <div class="button-container">
+          <button class="btn btn-altGold" (click)="toRaces()">Races</button>
+        </div>
       </div>
       <div class="col-lg-6 py-5">
         <h3>Feature Races</h3>
@@ -26,9 +24,9 @@
           <div class="py-5">
             <h3>{{ receivedRace.raceName }}</h3>
             <h4>{{ receivedRace.Circuit.circuitName }}</h4>
-            <h4>{{ receivedRace.round }}</h4>
-            <h4>{{ receivedRace.date }}</h4>
-            <h4>{{ receivedRace.time }}</h4>
+            <h4>Round {{ receivedRace.round }}</h4>
+            <h4>{{ receivedRace.date | date: "longDate" }}</h4>
+            <h4>{{ receivedRace.time | time }}</h4>
           </div>
         </div>
       </div>

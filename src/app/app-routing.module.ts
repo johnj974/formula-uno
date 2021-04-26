@@ -16,6 +16,10 @@ const routes: Routes = [
       import('./track/track.module').then((m) => m.TrackModule),
   },
   {
+    path: 'races',
+    loadChildren: () => import('./race/race.module').then((m) => m.RaceModule),
+  },
+  {
     path: 'results',
     loadChildren: () =>
       import('./results/results.module').then((m) => m.ResultsModule),

@@ -9,7 +9,7 @@ import { ResultComponent } from './result/result.component';
 import { ShopComponent } from './shop/shop.component';
 import { ContactComponent } from './contact/contact.component';
 import { CalenderComponent } from './calender/calender.component';
-
+import { SharedModule } from '../shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -19,11 +19,8 @@ import { CalenderComponent } from './calender/calender.component';
     ResultComponent,
     ShopComponent,
     ContactComponent,
-    CalenderComponent
+    CalenderComponent,
   ],
-  imports: [
-    CommonModule,
-    HomeRoutingModule
-  ]
+  imports: [CommonModule, HomeRoutingModule, SharedModule],
 })
-export class HomeModule { }
+export class HomeModule {}
