@@ -31,7 +31,7 @@ export class CalenderComponent implements OnInit {
   ngOnInit(): void {
     this.resultsService.getRaceCalender().subscribe((data) => {
       this.calender = data;
-      console.log(this.calender.MRData.RaceTable.Races);
+      //console.log(this.calender.MRData.RaceTable.Races);
       this.calenderArray = this.calender.MRData.RaceTable.Races;
       this.randomRace(this.calenderArray);
     });
