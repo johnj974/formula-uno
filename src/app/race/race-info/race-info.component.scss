@@ -1,0 +1,12 @@
+@import "../../../styles/helpers/variables";
+@import "../../../styles/helpers/button";
+
+.head-nav {
+  cursor: pointer;
+  color: $color-gold;
+  background-color: $color-black;
+}
+
+.completed {
+  background-color: red;
+}

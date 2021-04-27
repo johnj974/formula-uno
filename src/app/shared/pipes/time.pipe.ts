@@ -5,6 +5,6 @@ import { Pipe, PipeTransform } from '@angular/core';
 })
 export class TimePipe implements PipeTransform {
   transform(value: string): string {
-    return value.slice(0, 5) + ' GMT';
+    return value.slice(0, 5);
   }
 }

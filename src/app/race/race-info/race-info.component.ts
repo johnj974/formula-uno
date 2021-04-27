@@ -1,9 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { ResultsService } from 'src/app/shared/services/results.service';
 
-interface receivedRace {
+export interface receivedRace {
   raceName: string;
   Circuit: {
+    Location: {
+      lat: string;
+      long: string;
+    };
     circuitName: string;
   };
   round: string;
@@ -19,8 +23,12 @@ interface receivedRace {
 export class RaceInfoComponent implements OnInit {
   //.
 
+  todayDate = new Date();
+  milliSecondDate = +new Date(this.todayDate);
   raceInfo;
-  raceCalenderArray: [] = [];
+  raceCalenderArray: receivedRace[] = [];
+  lat: string;
+  long: string;
 
   constructor(private resultsService: ResultsService) {}
 
@@ -30,5 +38,14 @@ export class RaceInfoComponent implements OnInit {
       this.raceCalenderArray = this.raceInfo.MRData.RaceTable.Races;
       console.log(this.raceCalenderArray);
     });
+
+    console.log(this.milliSecondDate);
+  }
+
+  showMap(index: number) {
+    const race = this.raceCalenderArray[index];
+    this.lat = race.Circuit.Location.lat;
+    this.long = race.Circuit.Location.long;
+    console.log(this.lat, this.long);
   }
 }
