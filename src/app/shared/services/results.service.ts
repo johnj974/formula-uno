@@ -1,11 +1,13 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { Subject } from 'rxjs';
 
 @Injectable({
   providedIn: 'root',
 })
 export class ResultsService {
   //.
+  raceCoords = new Subject<string[]>();
 
   constructor(private http: HttpClient) {}
 
@@ -29,7 +31,3 @@ export class ResultsService {
     return this.http.get('http://ergast.com/api/f1/current.json');
   }
 }
-//
-// this years race calender:  http://ergast.com/api/f1/current.json
-// http://ergast.com/api/f1/drivers/{{driverid}}
-// http://ergast.com/api/f1/drivers/alonso

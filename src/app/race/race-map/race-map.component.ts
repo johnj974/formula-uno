@@ -1,15 +1,30 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
+import { Subscription } from 'rxjs';
+import { ResultsService } from 'src/app/shared/services/results.service';
 
 @Component({
   selector: 'app-race-map',
   templateUrl: './race-map.component.html',
-  styleUrls: ['./race-map.component.scss']
+  styleUrls: ['./race-map.component.scss'],
 })
-export class RaceMapComponent implements OnInit {
+export class RaceMapComponent implements OnInit, OnDestroy {
+  //.
+  receivedArray: string[];
+  lat;
+  long;
+  coordSubscription: Subscription;
 
-  constructor() { }
+  constructor(private resultsService: ResultsService) {}
 
   ngOnInit(): void {
+    this.coordSubscription = this.resultsService.raceCoords.subscribe(
+      (data: string[]) => {
+        [this.lat, this.long] = data;
+      }
+    );
   }
 
+  ngOnDestroy() {
+    this.coordSubscription.unsubscribe();
+  }
 }

@@ -47,5 +47,6 @@ export class RaceInfoComponent implements OnInit {
     this.lat = race.Circuit.Location.lat;
     this.long = race.Circuit.Location.long;
     console.log(this.lat, this.long);
+    this.resultsService.raceCoords.next([this.lat, this.long]);
   }
 }
