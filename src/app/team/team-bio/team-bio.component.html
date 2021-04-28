@@ -1,6 +1,6 @@
 <section class="team-section" [class]="team.name">
   <div class="container-fluid">
-    <div class="row">
+    <div class="row pt-2">
       <div class="col team-link">
         <ul *ngFor="let team of teamList; let id = index">
           <a (click)="onChangeTeam(id, team.name)"

@@ -1,6 +1,11 @@
 @import "../../../styles/helpers/variables";
 @import "../../../styles/helpers/team";
 
+.container-fluid {
+  background-color: $color-black;
+  border-bottom: 2px solid $color-gold;
+}
+
 .team-info {
   border-left: 2px solid $color-black;
 }
@@ -13,7 +18,7 @@
 .team-link {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  //flex-wrap: wrap;
 
   & ul {
     padding-left: 2rem;
@@ -45,5 +50,9 @@
 
   .team-bio {
     padding-top: 2rem;
+  }
+
+  .team-link {
+    flex-direction: column;
   }
 }

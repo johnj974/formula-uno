@@ -25,6 +25,7 @@ export class RaceInfoComponent implements OnInit {
 
   todayDate = new Date();
   milliSecondDate = +new Date(this.todayDate);
+  //expired: boolean = false;
   raceInfo;
   raceCalenderArray: receivedRace[] = [];
   lat: string;
@@ -37,6 +38,7 @@ export class RaceInfoComponent implements OnInit {
       this.raceInfo = data;
       this.raceCalenderArray = this.raceInfo.MRData.RaceTable.Races;
       console.log(this.raceCalenderArray);
+      //this.applyClass();
     });
 
     console.log(this.milliSecondDate);
@@ -49,4 +51,15 @@ export class RaceInfoComponent implements OnInit {
     console.log(this.lat, this.long);
     this.resultsService.raceCoords.next([this.lat, this.long]);
   }
+
+  // applyClass() {
+  //   for (const race of this.raceCalenderArray) {
+  //     let raceDate = +new Date(race.date);
+  //     if (this.milliSecondDate > raceDate) {
+  //       return 'completed';
+  //     } else {
+  //       return 'no';
+  //     }
+  //   }
+  // }
 }

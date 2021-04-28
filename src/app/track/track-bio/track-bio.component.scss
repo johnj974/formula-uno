@@ -4,6 +4,7 @@
 
 .container-fluid {
   background-color: $color-black;
+  border-bottom: 2px solid $color-gold;
 }
 
 .track-image {
@@ -39,5 +40,15 @@
     &:hover {
       text-decoration: underline;
     }
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .track-link {
+    flex-direction: column;
+  }
+
+  .track-info {
+    border: none;
   }
 }

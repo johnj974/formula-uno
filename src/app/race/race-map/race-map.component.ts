@@ -10,8 +10,8 @@ import { ResultsService } from 'src/app/shared/services/results.service';
 export class RaceMapComponent implements OnInit, OnDestroy {
   //.
   receivedArray: string[];
-  lat;
-  long;
+  lat: string;
+  long: string;
   coordSubscription: Subscription;
 
   constructor(private resultsService: ResultsService) {}
