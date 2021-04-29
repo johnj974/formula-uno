@@ -2,6 +2,7 @@ import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Subscription } from 'rxjs';
 import { ResultsService } from 'src/app/shared/services/results.service';
 import { google } from 'google-maps';
+import { mapData } from 'src/app/shared/models/map-data.interface';
 
 @Component({
   selector: 'app-race-map',
@@ -15,6 +16,7 @@ export class RaceMapComponent implements OnInit, OnDestroy {
   googleMapType = 'satellite';
 
   receivedArray: string[];
+  raceName: string = 'Track Locator';
   lat: number = 53.1424;
   long: number = -7.6921;
 
@@ -24,8 +26,11 @@ export class RaceMapComponent implements OnInit, OnDestroy {
 
   ngOnInit(): void {
     this.coordSubscription = this.resultsService.raceCoords.subscribe(
-      (data: number[]) => {
-        [this.lat, this.long] = data;
+      (data: mapData) => {
+        console.log(data);
+        this.raceName = data.raceName;
+        this.lat = data.lat;
+        this.long = data.long;
         this.markerDisplay = true;
       }
     );

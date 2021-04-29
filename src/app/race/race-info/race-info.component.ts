@@ -1,3 +1,4 @@
+import { stringify } from '@angular/compiler/src/util';
 import { Component, OnInit } from '@angular/core';
 import { receivedRace } from 'src/app/shared/models/received-race.interface';
 import { ResultsService } from 'src/app/shared/services/results.service';
@@ -58,7 +59,11 @@ export class RaceInfoComponent implements OnInit {
     this.lat = +race.Circuit.Location.lat;
     this.long = +race.Circuit.Location.long;
     console.log(this.raceName, this.lat, this.long);
-    this.resultsService.raceCoords.next([this.lat, this.long]);
+    this.resultsService.raceCoords.next({
+      raceName: this.raceName,
+      lat: this.lat,
+      long: this.long,
+    });
   }
 
   // applyClass() {

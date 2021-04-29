@@ -1,13 +1,14 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Subject } from 'rxjs';
+import { mapData } from '../models/map-data.interface';
 
 @Injectable({
   providedIn: 'root',
 })
 export class ResultsService {
   //.
-  raceCoords = new Subject<number[]>();
+  raceCoords = new Subject<mapData>();
 
   constructor(private http: HttpClient) {}
 
