@@ -15,7 +15,7 @@ import { SharedModule } from '../shared/shared.module';
     RaceRoutingModule,
     SharedModule,
     AgmCoreModule.forRoot({
-      apiKey: '111111111111111111111111111',
+      apiKey: '11111111111111111111111',
     }),
   ],
 })

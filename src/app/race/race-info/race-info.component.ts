@@ -28,8 +28,8 @@ export class RaceInfoComponent implements OnInit {
   //expired: boolean = false;
   raceInfo;
   raceCalenderArray: receivedRace[] = [];
-  lat: string;
-  long: string;
+  lat: number;
+  long: number;
 
   constructor(private resultsService: ResultsService) {}
 
@@ -46,8 +46,8 @@ export class RaceInfoComponent implements OnInit {
 
   showMap(index: number) {
     const race = this.raceCalenderArray[index];
-    this.lat = race.Circuit.Location.lat;
-    this.long = race.Circuit.Location.long;
+    this.lat = +race.Circuit.Location.lat;
+    this.long = +race.Circuit.Location.long;
     console.log(this.lat, this.long);
     this.resultsService.raceCoords.next([this.lat, this.long]);
   }

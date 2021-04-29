@@ -5,6 +5,11 @@
   cursor: pointer;
   color: $color-gold;
   background-color: $color-black;
+
+  &:hover {
+    background-color: $color-gold;
+    color: $color-black;
+  }
 }
 
 .completed {

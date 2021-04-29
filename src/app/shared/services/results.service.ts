@@ -7,7 +7,7 @@ import { Subject } from 'rxjs';
 })
 export class ResultsService {
   //.
-  raceCoords = new Subject<string[]>();
+  raceCoords = new Subject<number[]>();
 
   constructor(private http: HttpClient) {}
 

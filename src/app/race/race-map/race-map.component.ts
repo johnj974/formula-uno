@@ -11,23 +11,32 @@ import { google } from 'google-maps';
 export class RaceMapComponent implements OnInit, OnDestroy {
   //.
 
-  lati = 51.678418;
-  lngi = 7.809007;
+  markerDisplay = false;
   googleMapType = 'satellite';
 
   receivedArray: string[];
-  lat: string;
-  long: string;
+  lat: number = 53.1424;
+  long: number = -7.6921;
+
   coordSubscription: Subscription;
 
   constructor(private resultsService: ResultsService) {}
 
   ngOnInit(): void {
     this.coordSubscription = this.resultsService.raceCoords.subscribe(
-      (data: string[]) => {
+      (data: number[]) => {
         [this.lat, this.long] = data;
+        this.markerDisplay = true;
       }
     );
+  }
+
+  changeMap() {
+    if (this.googleMapType === 'satellite') {
+      this.googleMapType = 'hybrid';
+    } else {
+      this.googleMapType = 'satellite';
+    }
   }
 
   ngOnDestroy() {

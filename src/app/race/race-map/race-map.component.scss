@@ -1,3 +1,10 @@
+@import "../../../styles/helpers/variables";
+@import "../../../styles/helpers/button";
+
 agm-map {
-  height: 300px;
+  height: 400px;
+}
+
+.btn {
+  width: 100%;
 }

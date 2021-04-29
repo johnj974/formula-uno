@@ -1,17 +1,28 @@
-<!-- <section>
-  <div class="container">
+<section>
+  <div class="container pt-5">
+    <h3 class="text-center">Track Locator</h3>
     <div class="row">
-      <div class="col">{{ lat }} {{ long }}</div>
-      <div>
+      <div class="col">
         <agm-map
-          [latitude]="lati"
-          [longitude]="lngi"
+          [latitude]="lat"
+          [longitude]="long"
           [mapTypeId]="googleMapType"
+          [zoom]="5"
         >
+          <agm-marker
+            [latitude]="lat"
+            [longitude]="long"
+            *ngIf="markerDisplay"
+          ></agm-marker>
         </agm-map>
       </div>
     </div>
+    <div class="row text-center pt-3">
+      <div class="col">
+        <button class="btn btn-altGold" (click)="changeMap()">
+          {{ googleMapType }}
+        </button>
+      </div>
+    </div>
   </div>
-</section> -->
-<agm-map [latitude]="lati" [longitude]="lngi" [mapTypeId]="googleMapType">
-</agm-map>
+</section>
