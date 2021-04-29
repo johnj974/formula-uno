@@ -1,19 +1,26 @@
 import { Component, OnInit } from '@angular/core';
+import { receivedRace } from 'src/app/shared/models/received-race.interface';
 import { ResultsService } from 'src/app/shared/services/results.service';
 
-export interface receivedRace {
-  raceName: string;
-  Circuit: {
-    Location: {
-      lat: string;
-      long: string;
-    };
-    circuitName: string;
-  };
-  round: string;
-  date: string;
-  time: string;
-}
+// export interface receivedRace {
+//   raceName: string;
+//   Circuit: {
+//     Location: {
+//       lat: string;
+//       long: string;
+//     };
+//     circuitName: string;
+//   };
+//   round: string;
+//   date: string;
+//   time: string;
+// }
+
+// export interface mapData {
+//   raceName: string;
+//   lat: number;
+//   long: number;
+// }
 
 @Component({
   selector: 'app-race-info',
@@ -28,6 +35,7 @@ export class RaceInfoComponent implements OnInit {
   //expired: boolean = false;
   raceInfo;
   raceCalenderArray: receivedRace[] = [];
+  raceName: string;
   lat: number;
   long: number;
 
@@ -46,9 +54,10 @@ export class RaceInfoComponent implements OnInit {
 
   showMap(index: number) {
     const race = this.raceCalenderArray[index];
+    this.raceName = race.raceName;
     this.lat = +race.Circuit.Location.lat;
     this.long = +race.Circuit.Location.long;
-    console.log(this.lat, this.long);
+    console.log(this.raceName, this.lat, this.long);
     this.resultsService.raceCoords.next([this.lat, this.long]);
   }
 
