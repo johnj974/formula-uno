@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { AgmCoreModule } from '@agm/core';
 
 import { RaceRoutingModule } from './race-routing.module';
 import { MainRaceComponent } from './main-race/main-race.component';
@@ -9,6 +10,13 @@ import { SharedModule } from '../shared/shared.module';
 
 @NgModule({
   declarations: [MainRaceComponent, RaceInfoComponent, RaceMapComponent],
-  imports: [CommonModule, RaceRoutingModule, SharedModule],
+  imports: [
+    CommonModule,
+    RaceRoutingModule,
+    SharedModule,
+    AgmCoreModule.forRoot({
+      apiKey: '111111111111111111111111111',
+    }),
+  ],
 })
 export class RaceModule {}

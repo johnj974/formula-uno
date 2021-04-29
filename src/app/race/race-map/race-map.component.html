@@ -1,7 +1,17 @@
-<section>
+<!-- <section>
   <div class="container">
     <div class="row">
       <div class="col">{{ lat }} {{ long }}</div>
+      <div>
+        <agm-map
+          [latitude]="lati"
+          [longitude]="lngi"
+          [mapTypeId]="googleMapType"
+        >
+        </agm-map>
+      </div>
     </div>
   </div>
-</section>
+</section> -->
+<agm-map [latitude]="lati" [longitude]="lngi" [mapTypeId]="googleMapType">
+</agm-map>
