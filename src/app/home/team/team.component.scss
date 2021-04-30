@@ -6,9 +6,17 @@ img {
   max-height: 25rem;
 }
 
+.row {
+  padding: 2rem 0;
+}
+
 @media only screen and(max-width:992px) {
   .row {
     display: flex;
     flex-flow: column-reverse;
+    padding: 0;
+  }
+  h3 {
+    padding-top: 2rem;
   }
 }

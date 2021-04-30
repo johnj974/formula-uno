@@ -3,6 +3,7 @@
   border-color: $color-gold;
   font-size: 1.6rem;
   color: $color-black;
+  width: 20%;
 
   &:hover {
     background-color: transparent;
@@ -15,6 +16,7 @@
   border-color: $color-gold;
   font-size: 1.6rem;
   color: $color-gold;
+  width: 20%;
 
   &:hover {
     background-color: $color-gold;
@@ -26,5 +28,10 @@
   .button-container {
     text-align: center;
     margin-bottom: 2rem;
+  }
+
+  .btn-altGold,
+  .btn-gold {
+    width: 50%;
   }
 }

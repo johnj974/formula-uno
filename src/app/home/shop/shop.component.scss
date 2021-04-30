@@ -6,6 +6,10 @@
   color: $color-white;
 }
 
+.row {
+  padding: 2rem 0;
+}
+
 img {
   max-height: 30rem;
 }
@@ -20,5 +24,14 @@ img {
   .carousel-item-next:not(.carousel-item-left) {
     -webkit-transform: translateX(-100%);
     transform: translateX(-100%);
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .row {
+    padding: 0;
+  }
+  h3 {
+    padding-top: 2rem;
   }
 }

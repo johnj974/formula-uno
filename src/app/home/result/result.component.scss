@@ -5,9 +5,17 @@ button {
   font-size: 1.6rem;
 }
 
+.row {
+  padding: 2rem 0;
+}
+
 @media only screen and(max-width:992px) {
   .row {
     display: flex;
     flex-flow: column-reverse;
+    padding: 0;
+  }
+  .winner {
+    padding-top: 2rem;
   }
 }

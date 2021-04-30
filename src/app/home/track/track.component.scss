@@ -6,7 +6,20 @@
   height: 25rem;
 }
 
+.row {
+  padding: 2rem 0;
+}
+
 .race-section {
   background-color: $color-black;
   color: $color-white;
+}
+
+@media only screen and (max-width: 992px) {
+  .row {
+    padding: 0;
+  }
+  h3 {
+    padding-top: 2rem;
+  }
 }
