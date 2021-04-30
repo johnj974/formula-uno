@@ -7,6 +7,10 @@
   border-bottom: 2px solid $color-gold;
 }
 
+.track-display {
+  padding: 2rem 0;
+}
+
 .track-image {
   border-bottom: 2px solid $color-black;
 }
@@ -22,6 +26,7 @@
 .track-link {
   display: flex;
   flex-direction: row;
+  justify-content: space-evenly;
 
   & ul {
     padding-left: 2rem;
@@ -50,5 +55,11 @@
 
   .track-info {
     border: none;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .track-display {
+    padding: 0;
   }
 }

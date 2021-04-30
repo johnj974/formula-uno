@@ -64,6 +64,15 @@ export class RaceInfoComponent implements OnInit {
       lat: this.lat,
       long: this.long,
     });
+    this.scroll();
+  }
+
+  scroll() {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: 'smooth',
+    });
   }
 
   // applyClass() {

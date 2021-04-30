@@ -7,6 +7,14 @@
   background-image: linear-gradient(to right, $color-gold, $color-black);
 }
 
+.row {
+  padding-bottom: 2rem;
+}
+
+.form-box {
+  padding: 3rem;
+}
+
 form {
   padding: 0rem 2rem;
 
@@ -66,23 +74,20 @@ li a:hover {
   text-decoration: underline;
 }
 
-// .btn-gold {
-//   background-color: $color-gold;
-//   border-color: $color-gold;
-//   font-size: 1.6rem;
-//   color: $color-black;
-
-//   &:hover {
-//     background-color: transparent;
-//     color: $color-white;
-//   }
-// }
-
 .option-class {
   color: $color-gold;
   background-color: $color-black;
 
   &::selection {
     color: red;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .form-box {
+    padding: 0;
+  }
+  .row {
+    padding-bottom: 0;
   }
 }
