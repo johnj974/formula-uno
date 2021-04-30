@@ -6,6 +6,10 @@
   border-bottom: 2px solid $color-gold;
 }
 
+.display {
+  padding: 2rem 0;
+}
+
 .team-info {
   border-left: 2px solid $color-black;
 }
@@ -18,7 +22,7 @@
 .team-link {
   display: flex;
   flex-direction: row;
-  //flex-wrap: wrap;
+  justify-content: space-evenly;
 
   & ul {
     padding-left: 2rem;
@@ -54,5 +58,11 @@
 
   .team-link {
     flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .display {
+    padding: 0;
   }
 }

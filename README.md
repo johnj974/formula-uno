@@ -3,7 +3,7 @@
 work in progress
 
 <img src="src/assets/images/screenshot.png">
-<img src="src/assets/images/screenshot3.png">
+<img src="src/assets/images/screenshot4.png">
 <img src="src/assets/images/screenshot2.png">
 
 <!-- ## Technologies Used -->

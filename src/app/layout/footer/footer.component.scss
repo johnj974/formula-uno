@@ -40,6 +40,11 @@ h4 {
     margin: 0 auto;
   }
 }
+.connection,
+.navigate,
+.commit {
+  padding: 3rem;
+}
 
 .btn-gold {
   background-color: $color-gold;
@@ -72,7 +77,9 @@ h4 {
     flex-direction: column;
   }
 
-  // .commit {
-  //   display: none;
-  // }
+  .connection,
+  .navigate,
+  .commit {
+    padding: 2rem 3rem 1rem 3rem;
+  }
 }

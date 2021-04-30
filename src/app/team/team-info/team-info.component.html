@@ -6,7 +6,7 @@
           (click)="onShowTeam(id, team.name)"
           *ngFor="let team of teamInfoArray; let id = index"
         >
-          <div [class]="team.name">
+          <div [class]="team.name" class="team-display">
             <h3 class="p-5 my-4">
               {{ team.name }}
             </h3>
