@@ -13,22 +13,22 @@ export class ResultsService {
   constructor(private http: HttpClient) {}
 
   getResult() {
-    return this.http.get('http://ergast.com/api/f1/current/last/results.json');
+    return this.http.get('https://ergast.com/api/f1/current/last/results.json');
   }
 
   getDriverStanding() {
     return this.http.get(
-      'http://ergast.com/api/f1/current/driverStandings.json'
+      'https://ergast.com/api/f1/current/driverStandings.json'
     );
   }
 
   getTeamStanding() {
     return this.http.get(
-      'http://ergast.com/api/f1/current/constructorStandings.json'
+      'https://ergast.com/api/f1/current/constructorStandings.json'
     );
   }
 
   getRaceCalender() {
-    return this.http.get('http://ergast.com/api/f1/current.json');
+    return this.http.get('https://ergast.com/api/f1/current.json');
   }
 }

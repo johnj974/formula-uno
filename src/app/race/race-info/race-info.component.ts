@@ -3,26 +3,6 @@ import { Component, OnInit } from '@angular/core';
 import { receivedRace } from 'src/app/shared/models/received-race.interface';
 import { ResultsService } from 'src/app/shared/services/results.service';
 
-// export interface receivedRace {
-//   raceName: string;
-//   Circuit: {
-//     Location: {
-//       lat: string;
-//       long: string;
-//     };
-//     circuitName: string;
-//   };
-//   round: string;
-//   date: string;
-//   time: string;
-// }
-
-// export interface mapData {
-//   raceName: string;
-//   lat: number;
-//   long: number;
-// }
-
 @Component({
   selector: 'app-race-info',
   templateUrl: './race-info.component.html',
