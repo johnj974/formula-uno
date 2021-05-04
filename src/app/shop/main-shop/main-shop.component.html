@@ -1,1 +1,14 @@
-<p>main-shop works!</p>
+<section>
+  <div class="container">
+    <div class="row py-5">
+      <div
+        class="col-md-6 py-2"
+        *ngFor="let team of receivedTeam; let i = index"
+      >
+        <a (click)="toTeamShop(i, team.name)"
+          ><img src="{{ team.image }}" alt="{{ team.name }}" class="img-fluid"
+        /></a>
+      </div>
+    </div>
+  </div>
+</section>
