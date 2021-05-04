@@ -31,7 +31,8 @@ export class TrackBioComponent implements OnInit, OnDestroy {
   }
 
   onTrackChange(id: number, trackName: string) {
-    this.router.navigate(['tracks', id, trackName]);
+    let track = trackName.replace(/ /g, '');
+    this.router.navigate(['tracks', id, track]);
   }
 
   ngOnDestroy() {

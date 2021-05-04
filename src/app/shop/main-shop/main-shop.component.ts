@@ -21,7 +21,8 @@ export class MainShopComponent implements OnInit {
   }
 
   toTeamShop(id: number, team: string) {
-    this.router.navigate(['shop', id, team]);
-    console.log(id, team);
+    console.log(team);
+    let newName = team.replace(/ /g, '');
+    this.router.navigate(['shop', id, newName]);
   }
 }

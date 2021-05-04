@@ -23,6 +23,7 @@ export class TrackInfoComponent implements OnInit {
   }
 
   toTrackBio(id: number, name: string) {
-    this.router.navigate(['/tracks', id, name]);
+    let trackName = name.replace(/ /g, '');
+    this.router.navigate(['/tracks', id, trackName]);
   }
 }

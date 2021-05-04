@@ -24,6 +24,7 @@ export class TeamInfoComponent implements OnInit {
   }
 
   onShowTeam(id: number, teamName: string) {
-    this.router.navigate(['teams', id, teamName]);
+    let team = teamName.replace(/ /g, '');
+    this.router.navigate(['teams', id, team]);
   }
 }

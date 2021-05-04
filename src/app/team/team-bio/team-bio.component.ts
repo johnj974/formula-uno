@@ -28,6 +28,7 @@ export class TeamBioComponent implements OnInit {
   }
 
   onChangeTeam(id: number, name: string) {
-    this.router.navigate(['teams', id, name]);
+    let teamName = name.replace(/ /g, '');
+    this.router.navigate(['teams', id, teamName]);
   }
 }
