@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { ContactService } from 'src/app/shared/services/contact.service';
 
 @Component({
   selector: 'app-contact-form',
@@ -8,6 +9,7 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
 })
 export class ContactFormComponent implements OnInit {
   //.
+
   test: 'placeholder';
   contactForm: FormGroup;
   teams: string[] = [
@@ -23,7 +25,7 @@ export class ContactFormComponent implements OnInit {
     'Williams',
   ];
 
-  constructor() {}
+  constructor(private contactService: ContactService) {}
 
   ngOnInit(): void {
     this.contactForm = new FormGroup({
@@ -43,6 +45,11 @@ export class ContactFormComponent implements OnInit {
   }
 
   onSubmit() {
-    console.log(this.contactForm);
+    console.log(this.contactForm.value);
+    this.contactService.postContactData(this.contactForm.value);
+
+    setTimeout(() => {
+      this.contactForm.reset();
+    }, 5000);
   }
 }
