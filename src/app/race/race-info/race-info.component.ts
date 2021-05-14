@@ -1,7 +1,8 @@
-import { stringify } from '@angular/compiler/src/util';
 import { Component, OnInit } from '@angular/core';
 import { receivedRace } from 'src/app/shared/models/received-race.interface';
 import { ResultsService } from 'src/app/shared/services/results.service';
+
+import { RootRace } from '../../shared/interfaces/race-calender';
 
 @Component({
   selector: 'app-race-info',
@@ -15,7 +16,7 @@ export class RaceInfoComponent implements OnInit {
   milliSecondDate = +new Date(this.todayDate);
   //expired: boolean = false;
   raceInfo;
-  raceCalenderArray: receivedRace[] = [];
+  raceCalenderArray: RootRace[] = [];
   raceName: string;
   lat: number;
   long: number;
