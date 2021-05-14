@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
+import { ContactService } from 'src/app/shared/services/contact.service';
 
 @Component({
   selector: 'app-footer',
@@ -10,15 +11,15 @@ export class FooterComponent implements OnInit {
   //.
 
   registeredEmail: string;
-  registeredEmailArray: string[] = []; //TO CAPTURE AND PASS TO BACKEND
-  constructor() {}
+
+  constructor(private contactService: ContactService) {}
 
   ngOnInit(): void {}
 
   onSignUp(formData: NgForm) {
     console.log(formData.value.email);
     this.registeredEmail = formData.value.email;
-    this.registeredEmailArray.push(this.registeredEmail);
+    this.contactService.postNewsLetterData(this.registeredEmail);
     setTimeout(() => {
       this.registeredEmail = null;
       formData.reset();

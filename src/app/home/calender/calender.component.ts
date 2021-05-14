@@ -12,13 +12,13 @@ export class CalenderComponent implements OnInit {
   calender;
   calenderArray: [] = [];
   receivedRace = {
-    raceName: 'brazil',
+    raceName: 'Monaco Grand Prix',
     Circuit: {
-      circuitName: 'bra',
+      circuitName: 'Circuit de Monaco',
     },
-    round: '4',
-    date: '44444',
-    time: '2222',
+    round: '5',
+    date: 'May 23, 2021',
+    time: '13:00',
   };
 
   constructor(private resultsService: ResultsService, private router: Router) {}

@@ -26,4 +26,15 @@ export class ContactService {
         console.log(data);
       });
   }
+
+  postNewsLetterData(data: string) {
+    this.http
+      .post(
+        'https://formula-uno-f7666-default-rtdb.europe-west1.firebasedatabase.app/contacts.json',
+        data
+      )
+      .subscribe((data) => {
+        console.log(data);
+      });
+  }
 }
