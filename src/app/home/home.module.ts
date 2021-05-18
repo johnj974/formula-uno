@@ -7,7 +7,6 @@ import { TeamComponent } from './team/team.component';
 import { TrackComponent } from './track/track.component';
 import { ResultComponent } from './result/result.component';
 import { ShopComponent } from './shop/shop.component';
-import { ContactComponent } from './contact/contact.component';
 import { CalenderComponent } from './calender/calender.component';
 import { SharedModule } from '../shared/shared.module';
 
@@ -18,7 +17,6 @@ import { SharedModule } from '../shared/shared.module';
     TrackComponent,
     ResultComponent,
     ShopComponent,
-    ContactComponent,
     CalenderComponent,
   ],
   imports: [CommonModule, HomeRoutingModule, SharedModule],

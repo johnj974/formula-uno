@@ -1,6 +1,6 @@
 # Formula-Uno
 
-Progress can be viewed at [Formula-Uno](https://johnj974.github.io/formula-uno)
+Progress can be viewed at [Formula-Uno](https://johnj974.github.io/formula-uno) 16/05/2021
 
 A fictional site which will provide information about current F1 tracks and teams while also displaying
 the most recent results and up to date standings.
@@ -25,27 +25,32 @@ This project was generated with:
 
 ## User Experience
 
-<!-- The goal for this site is to provide a user with information about the current F1 teams and the tracks on which they will be racing in this current calender year.
+The goal for this site is to provide a user with information about the current F1 teams and the tracks on which they will be racing in this current calender year.
 The home page is divided into the five main sections that are within the site and a user can navigate to any of these pages from the sections themselves or from the navbar or footer.
 The five sections on the home page each have styling which links through to the pages when visited, The team section of the home page has a randomely generated team logo which corresponds to one of the teams.
 The tracks section has a striped colours flag which is used to represent differant colours of the teams involved and of the flag colours that represent the tracks.
-The results section has the drivers who stood on the podium of the most recent race and hopefully encourages a user to wish to find out more information.
+The results section has the drivers who stood on the podium of the most recent race and hopefully encourages a user to find out more information about the previous race in the results link
 The shop section of the home page has a carousel which cycles through all the team logos and gives a user the idea of the team colours.
-The race section has a randomely generated race information about one of this years currently scheduled races
+The race section has a randomely generated race which provides information about one of this years currently scheduled races
 
 When a user navigates to the team page they can choose from each of the ten teams which are displayed using their team colours and the name under which they race. When a user has chosen a team they are shown a page which has the F1 team logo and information about the team. Users can then cycle through the rest of the teams from a menu on this page or they can choose to go to another page.
 
-A user can use the track section of the site in the same way as the team section, The only differance being the information which is being displayed
+A user can use the track section of the site in the same way as the team section, The only differance being the information which is being displayed, Currently there are only eight tracks on display.
 
-The results page displays the current driver and constructor tables, Each team and driver is styled using the team colours which will make it easier for the user to locate the two drivers associated with each team, -->
+The results page displays the current driver and constructor tables, Each team and driver is styled using the team colours which will make it easier for the user to locate the two drivers associated with each team,
 
 ## Testing
 
-The project has been tested on various differant screens to ensure that it is a mobile friendly site. Manual site testing shows that all links are working correctly. The data coming from the Ergast api is updating correctly and updates within a half hour of the completion of a race.
+The project has been tested on various differant screens to ensure that it is a mobile friendly site. Manual site testing shows that all links are working correctly.
 
 The races section of the site which displays all the races in this calender year has a map which shows track locations around the world, this has worked correctly on testing.
 
 In the results page some of the information is hard to see because of the dynamic team colours and the placement of the data, I chose not to address this as I liked the look and it only affects a small portion of the page, This could be fixed by removing the team colours or just adding them to the first element in the table.
+
+Race results have been observed to update between 30 minutes up to one hour of a race finish, The Race calender also updates
+whenever there is a change to the racing schedule
+
+On one occasion data was not sent from the Ergast Api, this was fixed with a refresh of the page, I have only witnessed this happen once.
 
 ## Local Deployment
 

@@ -19,7 +19,7 @@ export class FooterComponent implements OnInit {
   onSignUp(formData: NgForm) {
     console.log(formData.value.email);
     this.registeredEmail = formData.value.email;
-    this.contactService.postNewsLetterData(this.registeredEmail);
+    //this.contactService.postNewsLetterData(this.registeredEmail); // add when backend takes more than one endpoint
     setTimeout(() => {
       this.registeredEmail = null;
       formData.reset();
