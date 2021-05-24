@@ -19,6 +19,7 @@
                 id="name"
                 formControlName="name"
                 placeholder="name"
+                #thankYouName
               />
               <span
                 class="form-text small"
@@ -104,10 +105,16 @@
                 formControlName="message"
                 placeholder="message"
               />
+              <span class="small" *ngIf="thankYou"
+                >Thank You {{ thankYouName.value }} for your interest</span
+              >
               <label for="message" class="form-label">Message</label>
             </div>
+
             <div class="button-container">
-              <button class="btn btn-altGold">Send</button>
+              <button class="btn btn-altGold" [disabled]="!contactForm.valid">
+                Send
+              </button>
             </div>
           </form>
         </div>

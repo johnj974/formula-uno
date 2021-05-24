@@ -45,7 +45,7 @@ The project has been tested on various differant screens to ensure that it is a 
 
 The races section of the site which displays all the races in this calender year has a map which shows track locations around the world, this has worked correctly on testing.
 
-In the results page some of the information is hard to see because of the dynamic team colours and the placement of the data, I chose not to address this as I liked the look and it only affects a small portion of the page, This could be fixed by removing the team colours or just adding them to the first element in the table.
+In the results page some of the information is hard to see because of the dynamic team colours and the placement of the data, I chose not to address this as I liked the look and it only affects a small portion of the page, This could be fixed by removing the team colours or just adding the colours to the first element in the table.
 
 Race results have been observed to update between 30 minutes up to one hour of a race finish, The Race calender also updates
 whenever there is a change to the racing schedule

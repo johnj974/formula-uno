@@ -9,7 +9,7 @@ import { ContactService } from 'src/app/shared/services/contact.service';
 })
 export class ContactFormComponent implements OnInit {
   //.
-
+  thankYou = false;
   test: 'placeholder';
   contactForm: FormGroup;
   teams: string[] = [
@@ -47,9 +47,11 @@ export class ContactFormComponent implements OnInit {
   onSubmit() {
     console.log(this.contactForm.value);
     this.contactService.postContactData(this.contactForm.value);
+    this.thankYou = true;
 
     setTimeout(() => {
       this.contactForm.reset();
+      this.thankYou = false;
     }, 5000);
   }
 }
