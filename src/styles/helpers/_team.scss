@@ -32,12 +32,12 @@
     to right,
     $color-williamsOne,
     70%,
-    $color-white
+    $color-williamsTwo
   );
 }
 
 .McLaren {
-  color: $color-mclarenTwo;
+  color: $color-black;
   //background-color: $color-mclarenOne;
   background-image: linear-gradient(
     to right,
@@ -71,7 +71,7 @@
   color: $color-white;
   background-image: linear-gradient(
     to right,
-    $color-ferrariOne,
+    $color-ferrariTwo,
     70%,
     $color-white
   );
@@ -83,9 +83,7 @@
     to right,
     $color-alpineOne,
     70%,
-    $color-white,
-    85%,
-    $color-ferrariOne
+    $color-alpineTwo
   );
 }
 
