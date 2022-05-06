@@ -144,6 +144,40 @@ export class TrackService {
       'assets/images/Abu_Dhabi_Circuit.png',
       'assets/images/uae.gif'
     ),
+    new TrackModel(
+      'Miami International Autodome',
+      'Street Circuit',
+      'Miami USA',
+      '5.412',
+      57,
+      25.5729,
+      80.142,
+      0,
+      'Anti-Clockwise',
+      19,
+      '6 may 2022',
+      80000,
+      1,
+      'assets/images/miami_curcuit.jpg',
+      'assets/images/usa_flag.png'
+    ),
+    new TrackModel(
+      'Imola',
+      'Race Circuit',
+      'Emilia Romagna Italy',
+      '4.909',
+      63,
+      44.341111,
+      11.713333,
+      0,
+      'Anti-Clockwise',
+      19,
+      '1953',
+      78000,
+      1,
+      'assets/images/imola_track.png',
+      'assets/images/italy.gif'
+    ),
   ];
 
   getTrackArray() {
